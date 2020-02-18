@@ -61,6 +61,7 @@ type Config struct {
 	MaxConcurrentWriteLimit int            `toml:"max-concurrent-write-limit"`
 	MaxEnqueuedWriteLimit   int            `toml:"max-enqueued-write-limit"`
 	EnqueuedWriteTimeout    time.Duration  `toml:"enqueued-write-timeout"`
+	AllowedOrgs             []string       `toml:"allowed-orgs"`
 	TLS                     *tls.Config    `toml:"-"`
 }
 
